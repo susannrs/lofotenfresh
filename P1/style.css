@@ -1,0 +1,19 @@
+
+body {
+  width: 60%;
+  margin: auto;
+  font-family: "Trebuchet MS", Arial;
+}
+
+header {
+  position: relative;
+}
+
+sub {
+  position: absolute;
+  right: 10px;
+}
+
+h2 {
+  
+}
