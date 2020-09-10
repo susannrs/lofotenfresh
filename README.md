@@ -1,0 +1,2 @@
+# lofotenfresh
+Fast slowfood
