@@ -63,10 +63,12 @@ colors, borders, and so on."
 7. JavaScript-applikasjoner<br/>
 Tentativt: 
     - (Bildekarusell)
-    - Finn på noe her
-    - Finn på noe her
-    - Finn på noe her
-    - Finn på noe her
+    - Hvis du hovrer over en rett, så endres bildet til bilder av råvarene i retten
+    - Hvis du klikker på menyknappen endres den til et kryss
+    - Risting ved å hovre over en dings på nettsida (Saft og suse eksempel)
+    - Når du trykker på et bilde får du en større versjon av bildet
+    - Transitions fra ett bilde til et annet når du hovrer over et bilde
+    
 8. En plan for hvordan vi skal "buil the site"<br/>
     Finn ut hva som kreves i det punktet her
     - En komplett oversikt over HTML, CSS og JavaScriot-dokumenter vi skal lage
