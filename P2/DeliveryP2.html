@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="nb" dir="ltr">
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="../P1/style.css">
@@ -28,43 +28,48 @@
         </ul>
       </section>
       <section>
-        <h3>Navgiasjons Struktur</h3>
-        <p>A brief discussion about the site's navigation structure using
-          the terminology learned in class and the notes on slides “HTML Cont.” in Storyboard
-          and Structures sections (slides:122-129). This is not a sketch of your navbar (or
-          whatever), but instead a map or description of which pages connect to which other
-          pages. (It is sometimes better to describe a clique in words than to try to draw it.) The
-          goal is to explain why the choice of a particular structure makes sense for your
-          website.
-        </p>
+        <h3>Navgiasjonsstruktur</h3>
+        <p>Sidens navigasjonsstruktur er bygget opp som en blanding av hierarkisk og lineær struktur, med en “drop down”-toppmeny som vil være lik på alle sidene. Dette tillater brukeren å navigere fra hovedsiden, samt de andre sidene til de fire underordnede sidene. Videre vil det på siden med catering være en lineær kobling ned til et utfyllings-skjema der brukeren kan bestille catering. Ved å trykke på logoen vil man alltid komme tilbake til hovedsiden.</p>
+        <p>Hensikten med hvordan nettsiden vil være bygget opp er tilfredsstilling av kravet om at brukeren kan komme seg rundt til hvilken som helst side på maksimalt 3 klikk. Vi gjør dette for at det skal være enkelt for brukerne å navigere. Grunnen til at “bestill catering”-siden vil være lineær koblet til “catering”-siden er fordi det ikke vil være naturlig for brukeren å bestille catering uten å først få informasjon om hvilken type catering som tilbys fra Lofoten Fresh. </p>
+        <img src="navstruct.png" alt="Navigasjonsstruktur over nettstedet." style=“width:100%; height:auto;“>
       </section>
       <section>
         <h3>Sideoppsett og utseende</h3>
-        <p>A description of design decisions that are universal
-          to your site. You should specify in writing the fonts (types and sizes), the color
-          scheme (for text, background, links, shadows, borders, etc.), navbar position in the
-          page and its appearance, banner, footer, the social icons bar, or background images
-          (if any of them is applicable). In addition to the textual description of these elements,
-          you should include a mockup image of this generic page that has only these common
-          elements and no other content. Finally, you should describe how these universal
-          design decisions fulfill certain goals of the website and its audience.
+        <p>
+          <ul>
+            <li>
+              <strong>NavBar:</strong> Navigasjonsbaren skal komme til syne når man trykker på meny knappen. Da skal alternativene Hjem, Meny, Catering, Kalender og Om oss vise seg. Om man trykker på en av disse alternativene vil man bli tatt med til deres respektive sider. Når navigasjonsbaren er framme vil meny ikonet endres til et kryss for å indikere at ved å trykke her igjen vil lukke navigasjonsbaren. I tillegg til side alternativer vil navigasjonsbaren også inneholde logoen. Når navigasjonsbaren er åpen vil eventuelle logoer som er plassert på nettsiden bli gjemt slik at det kun er en logo til stede (i navigasjonsbaren). Dette gjør vi for at brukeren ikke skal bli forvirret over hvilken logo man kan trykke på for å komme seg hjem.
+            </li>
+            <li>
+              <strong>Footer:</strong> Footeren sin funksjon er å informere brukeren om alternative informasjonskilder som for eksempel sosiale medier. Footeren skal også inneholde kontaktinformasjon slik at man kan komme i kontakt så fort som mulig. Footeren skal ligge på undersiden av siden.
+            </li>
+          </ul>
         </p>
       </section>
       <section>
         <h3>Innhold</h3>
-        <p>This is the longest section of your document. For every page, you will need
-          to give a text description of the content of the page as well as an image of the
-          mockup of the page. The text describes what goal(s) this page fulfills, and how
-          design decisions specific to it contribute to fulfilling such goals. The reason why you
-          should describe the content is that you might not have yet received the actual content
-          from the client and in your mockup of the page, you will be using fake text, fake
-          images, etc. While the content can be fake, you should try to use meaningful
-          headings and captions to convey its meaning. Finally, you should describe the design
-          decisions that are unique for this particular page (if any).
+        <p>
+          <ol>
+            <li>
+              <strong>Hjemsiden:</strong>Forsiden skal gi et inntrykk av hva Lofoten Fresh er, samt friste besøkende med bilder. Siden skal være minimalistisk og stilren, uten overflødig informajon. Den skal også inneholde en meny-knapp for å komme videre til mer detaljerte undersider. Forsiden skal gi informasjon om åpningstider. Øverst på siden er logoen synlig. Siden skal ha en footer.
+            </li>
+            <li>
+              <strong>Meny:</strong> Denne sida inneheld menyen med informasjon om dei ulike rettane til bedriften. For kvar rett er det eit bilde og tekst sidestilt. Når du hold over eit bilde blir bildet rundt og fleire mindre, runde bildar poppar opp med råvarane brukt i retten. Disse meny-elementa ligg i ei liste nedover sida. Menyknapp ligg øvst og footer ligg nederst på sida.
+            </li>
+            <li>
+              <strong>Lokasjonssiden:</strong> Lokasjonssiden har som hovedoppgave å gi brukeren informasjon om hvor foodtrucken befinner seg til hvilken tid og om det er noen spesielle hendelser i nærmeste tid. Lokasjonssiden skal inneholde et kart som viser hvor foodtrucken befinner seg til en hver tid den er åpen med forklarende tekst. Ellers skal siden også inneholde en menyknapp for å åpne navigasjonsbaren og en logo øverst på siden. Siden skal ha en footer.
+            </li>
+            <li>
+              <strong>Catering:</strong> På denne sida ligg bilder av tidlegare catering som har blitt servert av bedriften på ulike typer arrangement. For kvart arrangement er det eit bilde og tekst sidestilt. Slike element ligg under kvarandre. Menyknapp ligg øvst og footer ligg nederst på sida.
+            </li>
+            <li>
+              <strong>Om oss:</strong> Om oss-siden har som hensikt å gi en mer detaljert beskrivelse av organisasjonen og hva den står for. Når du er inne på siden så vil du kunne trykke på en logo i toppen som tar deg tilbake til hjemmesiden, eller trykke på menyknappen for å navigere deg andresteder. På Om oss-siden kan du rulle deg nedover for å få informasjon og bilder angående organisasjonen og eieren. Siden skal ha en footer.
+            </li>
+          </ol>
         </p>
       </section>
       <section>
-        <h3>Minimums krav</h3>
+        <h3>Minimumskrav</h3>
         <p>The website must include four distinct JavaScript
           applications (for example, rollover effects on images or menus, user-defined
           functions, form validation, animations, etc.). The four applications must all be
@@ -88,9 +93,9 @@
             <ul>
               <li>aboutus.html</li>
               <li>location.html</li>
-              <li>catring.html</li>
+              <li>catering.html</li>
               <li>order.html</li>
-              <li>foodmenu</li>
+              <li>foodmenu.html</li>
             </ul>
           </li>
           <li>images/
