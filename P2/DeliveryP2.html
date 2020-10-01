@@ -80,18 +80,173 @@
       </section>
       <section>
         <h3>Plan</h3>
-        <p>Provide a clear, specific description of your plan for building the site. Outline
-          the tasks to be accomplished, the deadlines for those tasks, and who is responsible
-          for them. Include a list of files and folders, which will help each partner link to files her
-          partner has built. Include a complete list of everything you need to get from your
-          client (text, pictures, sound, etc.) and when you expect to get them. To the greatest
-          extent you can, try to have all of these things by the time your design is done so that
-          nothing will delay your coding.
-        </p>
+        <p>Planen for mappestrukturen vil være at hovedsiden er en index-fil som ligger ytterst i hovedmappen "Lofotenfresh". Videre vil alle undersidene ligge i "sides"-mappen, bildene vil ligge i "images", og de forskjellige javascriptene vil være i "scripts". Hoveddelen av stylingen vil komme fra "styling.css"-filen, mens spesielle spesifikasjoner vil komme fra nye stylingsheets i samme mappe.</p>
+        <p>For å ta hensyn til modularitet og gjennbruk av kode vil vi samle kode som blir brukt flere ganger under mappen "modularity", der blant annet koden til navbaren og footeren vil ligge.</p>
+        <ul>
+          <li>index.html</li>
+          <li>sides/
+            <ul>
+              <li>aboutus.html</li>
+              <li>location.html</li>
+              <li>catring.html</li>
+              <li>order.html</li>
+              <li>foodmenu</li>
+            </ul>
+          </li>
+          <li>images/
+            <ul>
+              <li>homepagebackground1.png</li>
+              <li>homepagebackground2.png</li>
+              <li>locationbackground.png</li>
+              <li>logo.svg</li>
+            </ul>
+          </li>
+          <li>scripts/
+            <ul>
+              <li>java1-sidemenu.js</li>
+              <li>java2-welcome.js</li>
+              <li>java3-forms.js</li>
+              <li>java4-animations.js</li>
+              <li>java5-ingredients.js</li>
+              <li>java6-enlargepicture.js</li>
+              <li>modularity/
+                <ul>
+                  <li>navbar.js</li>
+                  <li>footer.js</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>styling/
+            <ul>
+              <li>styling.css</li>
+              <li>styling1.css</li>
+              <li>styling2.css</li>
+            </ul>
+          </li>
+        </ul>
       </section>
+      <section>
+        <h3>Arbeidsfordeling og frister</h3>
+        <table>
+			<thead>
+				<tr>
+					<th> Filnavn </th>
+					<th> Beskrivelse av oppgave </th>
+					<th> Ansvar </th>
+					<th> Frist </th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>index.html</td>
+					<td>Hjemmesiden</td>
+					<td>Anne</td>
+					<td>29.10.2020</td>
+				</tr>
+				<tr>
+					<td>aboutus.html</td>
+					<td>Om oss-siden</td>
+					<td>Aksel</td>
+					<td>29.11.2020</td>
+				</tr>
+				<tr>
+					<td>location.html</td>
+					<td>lokasjonssiden</td>
+					<td>Susanne</td>
+					<td>29.10.2020</td>
+				</tr>
+				<tr>
+					<td>catering.html</td>
+					<td>cateringsiden</td>
+					<td>Viggo</td>
+					<td>29.10.2020</td>
+				</tr>
+				<tr>
+					<td>order.html</td>
+					<td>bestill catering-siden</td>
+					<td>Susanne</td>
+					<td>29.10.2020</td>
+				</tr>
+        <tr>
+          <td>foodmenu.html</td>
+          <td>Matmeny-siden</td>
+          <td>Vegard</td>
+          <td>29.10.2020</td>
+        </tr>
+				<tr>
+					<td>images/</td>
+					<td>Samle bilder i mappe</td>
+					<td>Viggo</td>
+					<td>22.10.2020</td>
+				</tr>
+				<tr>
+					<td>sidemenu.js</td>
+					<td>Sidemenyen i javascript</td>
+					<td>Anne</td>
+					<td>29.11.2020</td>
+				</tr>
+				<tr>
+					<td>welcome.js</td>
+					<td>Velkomstmelding</td>
+					<td>Aksel</td>
+					<td>29.11.2020</td>
+				</tr>
+				<tr>
+					<td>forms.js</td>
+					<td>Bestillingsskjema for å bestille catering</td>
+					<td>Susanne</td>
+					<td>29.11.2020</td>
+				</tr>
+				<tr>
+					<td>animation.js</td>
+					<td>En animasjon</td>
+					<td>Vegard</td>
+					<td>29.11.2020</td>
+				</tr>
+				<tr>
+					<td>ingredients.js</td>
+					<td>Når man klikker på bilder av maten får man opp bilder av råvarene</td>
+					<td>Viggo</td>
+					<td>29.11.2020</td>
+				</tr>
+				<tr>
+					<td>enlargepicture.js</td>
+					<td>Når man holder over bildene blir de større</td>
+					<td>Anne</td>
+					<td>29.11.2020</td>
+				</tr>
+        <tr>
+					<td>styling.css</td>
+					<td>hovedstylingsdokument</td>
+					<td>Aksel</td>
+					<td>29.10.2020</td>
+				</tr>
+				<tr>
+					<td>stylingX.js</td>
+					<td>Spesielle stylingsider</td>
+					<td>Alle</td>
+					<td>29.11.2020</td>
+				</tr>
+				<tr>
+					<td>modularity/</td>
+					<td>Samle modularitet i en mappe.</td>
+					<td>Vegard</td>
+					<td>29.10.2020</td>
+				</tr>
+				<tr>
+					<td>Siste sjekk</td>
+					<td>Validere all kode, og overse alle sider før innlevering</td>
+					<td>Alle</td>
+					<td>05.11.2020</td>
+				</tr>
+			</tbody>
+		</table>
+    </section>
     </main>
     <footer>
         <p>Gruppe 42 – Anne Margrethe Vestgøte Bosch, Aksel Kirknes, Susanne Rynning Seip, Viggo Skarby og Vegard Tuset</p>
     </footer>
   </body>
+
 </html>
