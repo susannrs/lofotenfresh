@@ -73,18 +73,22 @@
       </section>
       <section>
         <h3>Minimumskrav</h3>
-        <p>The website must include four distinct JavaScript
-          applications (for example, rollover effects on images or menus, user-defined
-          functions, form validation, animations, etc.). The four applications must all be
-          different from each other. Clearly, indicate how each of you will be fulfilling these
-          minimum requirements.
-          Please note that each of these items must be constructed entirely by you and not copied
-          from external websites on the Web (though you can modify the code from our class
-          materials). Once you fulfill the minimum requirements with your own code, you are
-          allowed to get the code from the web (with source attribution) to incorporate certain
-          advanced components (e.g. image galleries with transitions), but they will not count as
-          part of the minimum requirements.
-        </p>
+        <p>For å oppfylle minimumkravene til bruk av javascript har vi kommet med følgende 4 JavaScript-ideer, der personen(e) som står i parentes vil ha hovedansvar for at det blir gjort innen fristene:</p>
+        <ol>
+        <li>
+          <p><strong>Navigasjonsbar og Footer</strong> (Anne, Vegard): Siden vi vil ha med en lik navigasjonsbar og footer på alle sidene, men slippe å gjenskrive koden i hver html-fil, har vi lyst til å legge inn en div-klasse (på formen &lt;div class=”navbar”&gt;) som vi kaller på i hver html-fil, også skrive et JavaScript til selve footeren og navigasjonsbaren.</p>
+        </li>
+        <li>
+          <p><strong>Velkomstmelding</strong> (Aksel): Når en person ankommer siden vil personen få opp en velkomstmelding som er tilpasset hvilken tid det er på døgnet. Teksten som komme vil variere mellom: “God morgen”, “God formiddag”, “God ettermiddag”, “God kveld”.</p>
+        </li>
+        <li>
+          <p><strong>Fra matrett til råvarer</strong> (Viggo): Bilde av råvarene dukker opp når du holder over bilder av matrettene. Siden det er et sterkt fokus på bruk av gode råvarer i Lofoten Fresh, vil vi få frem dette ved at besøkende kan holde over bildene av matrettene for at mindre bilder av råvarene brukt i hver rett vil komme opp.</p>
+        </li>
+        <li>
+          <p><strong>Bildene forstørres når man klikker på dem</strong> (Susanne): For at besøkende på nettsiden skal kunne se bildene tydeligere hvis ønsket, vil vi implementere et javascript som gjør at hvis man trykker på bildene vil bilde bli forstørret og bakgrunnen vil bli uklar.</p>
+        </li>
+      </ol>
+        <p>Når vi har oppfylt minimumskravene har vi lyst til å også skrive et JavaScript for å validere catering-skjemaet.</p>
       </section>
       <section>
         <h3>Plan</h3>
@@ -111,12 +115,11 @@
           </li>
           <li>scripts/
             <ul>
-              <li>java1-sidemenu.js</li>
-              <li>java2-welcome.js</li>
-              <li>java3-forms.js</li>
-              <li>java4-animations.js</li>
-              <li>java5-ingredients.js</li>
-              <li>java6-enlargepicture.js</li>
+              <li>welcome.js</li>
+              <li>forms.js</li>
+              <li>animations.js</li>
+              <li>ingredients.js</li>
+              <li>enlargepicture.js</li>
               <li>modularity/
                 <ul>
                   <li>navbar.js</li>
@@ -189,8 +192,8 @@
 					<td>22.10.2020</td>
 				</tr>
 				<tr>
-					<td>sidemenu.js</td>
-					<td>Sidemenyen i javascript</td>
+					<td>navbar.js</td>
+					<td>Navigasjonsbaren i javascript</td>
 					<td>Anne</td>
 					<td>29.11.2020</td>
 				</tr>
@@ -203,12 +206,12 @@
 				<tr>
 					<td>forms.js</td>
 					<td>Bestillingsskjema for å bestille catering</td>
-					<td>Susanne</td>
+					<td>Vegard</td>
 					<td>29.11.2020</td>
 				</tr>
 				<tr>
-					<td>animation.js</td>
-					<td>En animasjon</td>
+					<td>footer.js</td>
+					<td>Footer til alle sidene</td>
 					<td>Vegard</td>
 					<td>29.11.2020</td>
 				</tr>
@@ -221,7 +224,7 @@
 				<tr>
 					<td>enlargepicture.js</td>
 					<td>Når man holder over bildene blir de større</td>
-					<td>Anne</td>
+					<td>Susanne</td>
 					<td>29.11.2020</td>
 				</tr>
         <tr>
