@@ -35,7 +35,10 @@ section {
 #logo {
   width: 200px;
   float: right;
+}
 
+#navbar {
+  width: 500px;
 }
 
 footer {
