@@ -38,6 +38,20 @@ section {
   margin: auto;
 }
 
+figcaption {
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+#pageoverview li {
+  margin-top: 20px;
+}
+
+#pageoverview img {
+  margin-top: 10px;
+}
+
 #palett {
   display: block;
   margin: auto;
