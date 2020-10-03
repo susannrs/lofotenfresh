@@ -5,16 +5,11 @@ body {
   font-family: "Trebuchet MS", Arial, sans-serif;
 }
 
-h2 {
-  font-size: 16px;
-  font-weight: normal;
-}
-
-h4 {
+h3 {
   margin-bottom: 3px;
 }
 
-h4 + p, h4 + ul {
+h3 + p, h3 + ul {
   margin-top: 0px;
 }
 
@@ -37,8 +32,16 @@ section {
   float: right;
 }
 
-#navbar {
-  width: 500px;
+.image {
+  display: block;
+  width: 80%;
+  margin: auto;
+}
+
+#palett {
+  display: block;
+  margin: auto;
+  width: 300px;
 }
 
 footer {
