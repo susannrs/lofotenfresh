@@ -9,21 +9,23 @@ function generateNavbar(parameter) {
 }
 
 function generateNavbar() {
+  // Default is always not to show navbar initially?
+  document.getElementsByClassName("navbar")[0].style.display = "none";
+
   //IMAGES
 
   let logo = document.createElement("a");
   logo.setAttribute("href", "https://www.vg.no/"); //set link to index, same relative link problem as described below
-  // add the right href to a tag here
   let logoImg = document.createElement("img");
   // Important: Path is from index file to the right picture, which means this wont work for other pages than main right now
   logoImg.setAttribute("src", "images/logo.svg");
   logo.appendChild(logoImg);
 
-  let menuButton = document.createElement("button"); //need to override the default CSS for buttons
-  menuButton.setAttribute("onclick", "closeNavbar()");
-  let menuImg = document.createElement("img");
-  menuImg.setAttribute("src", "images/nav_button_close.svg");
-  menuButton.appendChild(menuImg);
+  let menuButtonClose = document.createElement("button"); //need to override the default CSS for buttons
+  menuButtonClose.setAttribute("onclick", "closeNavbar()");
+  let menuImgClose = document.createElement("img");
+  menuImgClose.setAttribute("src", "images/nav_button_close.svg"); //relative path problem
+  menuButtonClose.appendChild(menuImgClose);
 
   // TEXT
 
@@ -42,16 +44,20 @@ function generateNavbar() {
   //fetching the first aka [0] element with this class name
   document.getElementsByClassName("navbar")[0].appendChild(logo); //how can I add all the stuff at once?
   document.getElementsByClassName("navbar")[0].appendChild(links);
-  document.getElementsByClassName("navbar")[0].appendChild(menuButton);
+  document.getElementsByClassName("navbar")[0].appendChild(menuButtonClose);
 }
 
 function closeNavbar() {
   document.getElementsByClassName("navbar")[0].style.display = "none";
-  // Need to create complementing functionality in topbar.js
-  document.getElementsByClassName("topbar")[0].style.display = "block"; //Or just do this to the harmburger button in topbar through ID
+  // Complementing functionality is found in topbar.js
+  document.getElementById("menuButton").style.visibility = "visible";
+  document.getElementById("logoTopbar").style.visibility = "visible";
 }
 
-// Invoke when pressing button in topbar
+// Invoked when pressing hambruger button in topbar
 function openNavbar() {
   document.getElementsByClassName("navbar")[0].style.display = "block";
+  // Need to figure out whether visibilty is hidden or display is none for the code lines below
+  document.getElementById("menuButton").style.visibility = "hidden";
+  document.getElementById("logoTopbar").style.visibility = "hidden";
 }
