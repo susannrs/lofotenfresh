@@ -1,0 +1,46 @@
+
+#main {
+  background-color: #F68035;
+  padding: 2% 5%;
+}
+
+.row {
+  display: flex;
+  justify-content: flex-end;
+  padding: 5px;
+}
+
+input, textarea {
+  width: 70%;
+  padding-left: 5px;
+}
+
+#buttons {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 20px;
+}
+
+#cancel {
+  background-color: Transparent;
+  color: #3279DE;
+  padding: 5px 15px;
+  border: solid;
+  border-color: #3279DE;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+#submit {
+  background-color: #3279DE;
+  color: white;
+  padding: 5px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+fieldset {
+  border: none;
+}
