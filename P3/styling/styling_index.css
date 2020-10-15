@@ -11,3 +11,9 @@ body {
   background-size: cover;
   background-repeat: repeat, no-repeat, no-repeat;
 }
+
+/*Move this part to main stylesheet if appropriate*/
+#welcomeMessage,
+#openingHours {
+  text-align: center;
+}
