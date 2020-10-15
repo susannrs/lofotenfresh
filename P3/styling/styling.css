@@ -1,0 +1,18 @@
+body{
+margin: 50px;
+}
+
+.flexContainer{
+  display: flex;
+  align-items: center;
+}
+
+.textBlock{
+  flex: 1;
+  padding: 50px;
+}
+
+.imgBlock{
+  flex: 1;
+  padding: 50px;
+}
