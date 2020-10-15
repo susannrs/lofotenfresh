@@ -33,6 +33,16 @@ body {
   right: 0px;
 }
 
+.third {
+  bottom: 0px;
+  left: 0px;
+}
+
+.fourth {
+  bottom: 0px;
+  right: 0px;
+}
+
 .imgBlock {
   position: relative;
 }
