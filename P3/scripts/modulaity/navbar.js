@@ -37,18 +37,22 @@ function generateNavbar(paths=defaultPaths,images=defaultImagePaths) {
   // TEXT
 
   // wrapper for the text in the navbar
-  let links = document.createElement("h1");
-  links.style.display = "inline"; //h1 is block by default
+  let links = document.createElement("div");
+  links.setAttribute("id","navbarFlexContainer");
 
   //paths corresponding to text categories in navbar
   const textLinks = [paths.menu, paths.catering, paths.location, paths.about]
 
   for (let index = 0; index < navbarCategories.length; index++) {
+    let nodeWrapper = document.createElement("h1"); //Links are in h1 for main style to apply
+    nodeWrapper.style.display = "inline"; //h1 is block by default, this overrides with inline CSS
+    nodeWrapper.setAttribute("class","navbarText");
     let node = document.createElement("a");
     node.setAttribute("href",textLinks[index]);
     let textNode = document.createTextNode(navbarCategories[index]);
     node.appendChild(textNode);
-    links.appendChild(node);
+    nodeWrapper.appendChild(node);
+    links.appendChild(nodeWrapper);
   }
 
   //ADD EVERYTHING TO HTML
