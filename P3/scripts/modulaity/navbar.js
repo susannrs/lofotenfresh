@@ -1,39 +1,51 @@
 // Text needs to be all lowercase to fit the font
-navbarCategories = ["menu", "catering", "location", "about"];
+const navbarCategories = ["menu", "catering", "location", "about"];
 
-// If function is run from index and not in the sides folder, use this
-function generateNavbar(parameter) {
-  //not created yet
-  // dealing with relative path problem
-  return;
-}
+// Defaults are navigating from sides folder
+const defaultPaths = {
+  logo:"../index.html",
+  menu:"food_menu.html",
+  catering:"catering.html",
+  location:"location.html",
+  about:"about_us.html"
+};
 
-function generateNavbar() {
-  // Default is always not to show navbar initially?
+const defaultImagePaths = {
+  getLogo:"../images/logo.svg",
+  getClose:"../images/nav_button_close.svg"
+  };
+
+function generateNavbar(paths=defaultPaths,images=defaultImagePaths) {
+  // Default is always not to show navbar initially
   document.getElementsByClassName("navbar")[0].style.display = "none";
 
   //IMAGES
 
   let logo = document.createElement("a");
-  logo.setAttribute("href", "https://www.vg.no/"); //set link to index, same relative link problem as described below
+  logo.setAttribute("href", paths.logo); //set link to index, same relative link problem as described below
   let logoImg = document.createElement("img");
   // Important: Path is from index file to the right picture, which means this wont work for other pages than main right now
-  logoImg.setAttribute("src", "images/logo.svg");
+  logoImg.setAttribute("src", images.getLogo); //relative path problem
   logo.appendChild(logoImg);
 
   let menuButtonClose = document.createElement("button"); //need to override the default CSS for buttons
   menuButtonClose.setAttribute("onclick", "closeNavbar()");
   let menuImgClose = document.createElement("img");
-  menuImgClose.setAttribute("src", "images/nav_button_close.svg"); //relative path problem
+  menuImgClose.setAttribute("src", images.getClose); //relative path problem
   menuButtonClose.appendChild(menuImgClose);
 
   // TEXT
 
   // wrapper for the text in the navbar
-  let links = document.createElement("span");
+  let links = document.createElement("h1");
+  links.style.display = "inline"; //h1 is block by default
+
+  //paths corresponding to text categories in navbar
+  const textLinks = [paths.menu, paths.catering, paths.location, paths.about]
 
   for (let index = 0; index < navbarCategories.length; index++) {
     let node = document.createElement("a");
+    node.setAttribute("href",textLinks[index]);
     let textNode = document.createTextNode(navbarCategories[index]);
     node.appendChild(textNode);
     links.appendChild(node);

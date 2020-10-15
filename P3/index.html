@@ -7,11 +7,29 @@
     <link href="styling/styling.css" rel="stylesheet" />
     <link href="styling/styling_index.css" rel="stylesheet" />
 
-    <!--Invoke several functions on page load-->
     <script>
+      // Is this the right place to have this? Better on the bottom?
+      //Objects with overriding paths
+      const customPaths = {
+        logo:"index.html",
+        menu:"sides/food_menu.html",
+        catering:"sides/catering.html",
+        location:"sides/location",
+        about:"sides/about_us.html"
+
+      };
+
+      const customImagePaths = {
+        getLogo:"images/logo.svg",
+        getClose:"images/nav_button_close.svg",
+        getOpen:"images/nav_button.svg"
+      };
+
+      // Invoke several functions on page load
       window.onload = function () {
-        generateNavbar();
-        generateTopbar("Lofoten Fresh");
+        // Below: Overriding the default paths when in index
+        generateNavbar(customPaths,customImagePaths);
+        generateTopbar("Lofoten Fresh",customPaths,customImagePaths);
         //generateFooter();
       };
     </script>
