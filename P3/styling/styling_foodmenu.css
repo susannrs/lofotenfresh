@@ -15,3 +15,15 @@ body {
  width: 30%;
  margin: 0 auto;
 }
+
+.ingredient {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 50%;
+  visibility: hidden;
+}
+
+.imgBlock {
+  position: relative;
+}
