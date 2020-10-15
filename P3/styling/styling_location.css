@@ -1,0 +1,11 @@
+
+#main {
+  display: flex;
+}
+
+#right_now, #seasons {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
