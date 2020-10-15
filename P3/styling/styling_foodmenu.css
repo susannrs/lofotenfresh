@@ -15,3 +15,34 @@ body {
  width: 30%;
  margin: 0 auto;
 }
+
+.ingredient {
+  position: absolute;
+  width: 25%;
+  opacity: 0;
+  transition: opacity 1000ms;
+}
+
+.first {
+  top: 0px;
+  left: 0px;
+}
+
+.second {
+  top: 0px;
+  right: 0px;
+}
+
+.third {
+  bottom: 0px;
+  left: 0px;
+}
+
+.fourth {
+  bottom: 0px;
+  right: 0px;
+}
+
+.imgBlock {
+  position: relative;
+}
