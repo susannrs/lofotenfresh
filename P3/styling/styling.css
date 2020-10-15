@@ -16,3 +16,19 @@ margin: 50px;
   flex: 1;
   padding: 50px;
 }
+
+p{
+  color: #0f0f0f;
+  font-family: "Arimo", arial, sans-serif;
+  text-shadow: 2pt 2pt rgba(22, 22, 22, 0.28);
+  font-size: 24pt;
+  color: white;
+}
+
+h1, h2, h3, h4, h5{
+  color: #f0f0f0;
+  font-family: "Bowlby One SC", arial black, sans-serif;
+  text-shadow: 3pt 3pt rgba(22,22,22,0.28);
+  text-transform: uppercase;
+  color: white;
+}
