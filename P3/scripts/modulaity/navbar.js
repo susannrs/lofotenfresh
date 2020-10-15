@@ -7,7 +7,7 @@ const defaultPaths = {
   menu:"food_menu.html",
   catering:"catering.html",
   location:"location.html",
-  about:"about_us.html"
+  about:"about.html"
 };
 
 const defaultImagePaths = {
