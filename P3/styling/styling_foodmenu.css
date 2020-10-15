@@ -1,0 +1,17 @@
+body {
+  margin: 50px;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(22, 22, 22, 0.28),
+    rgba(22, 22, 22, 0.28)
+  ),
+    url("../images/placeholder_foodmenu.jpg");
+    background-size: cover;
+    background-repeat: repeat, no-repeat;
+}
+
+#introtext{
+ text-align: center;
+ width: 30%;
+ margin: 0 auto;
+}
