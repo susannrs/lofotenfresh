@@ -4,16 +4,22 @@
     <meta charset="utf-8">
     <title>Catering</title>
     <link rel="stylesheet" href="../styling/styling.css">
+    <link rel="stylesheet" href="../styling/styling_catering.css">
+
+    <script>
+      window.onload = function() {
+        generateNavbar();
+        generateTopbar("Catering");
+        //generatFooter();
+      }
+    </script>
+
   </head>
   <body>
 
     <div class="navbar"></div>
 
-    <header>
-      <img id="logo" src="../images/logo.svg" alt="Lofoten Fresh logo">
-      <h1>CATERING</h1>
-      <img src="../images/nav_button.svg" alt="Navigation menu">
-    </header>
+    <header class="topbar"></header>
 
     <div class="buttonContainer">
       <div class="orderButton">
@@ -21,26 +27,32 @@
       </div>
     </div>
 
-    <div class="container">
+    <div>
 
-      <section class="picListElement">
-        <img src="dummy.png" alt="Dummy-bilde">
+      <section class="flexContainer">
+        <div class="imgBlock">
+          <img src="../images/wedding_img.jpg" alt="Wedding" width=100%>
+        </div>
         <div class="textBlock">
           <h2>Wedding</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
       </section>
 
-      <section class="picListElement">
+      <section class="flexContainer">
         <div class="textBlock">
           <h2>Birthday</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
-        <img src="dummy.png" alt="Dummy-bilde">
+        <div class="imgBlock">
+          <img src="../images/birthday_img.jpg" alt="Birthday" width=100%>
+        </div>
       </section>
 
-      <section class="picListElement">
-        <img src="dummy.png" alt="Dummy-bilde">
+      <section class="flexContainer">
+        <div class="imgBlock">
+          <img src="../images/bar_mitzvah_img.jpg" alt="Bar mitzvah" width=100%>
+        </div>
         <div class="textBlock">
           <h2>Bar mitzvah</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -50,6 +62,10 @@
     </div>
 
     <footer class="footer"></footer>
+
+    <script src="../scripts/modularity/navbar.js"></script>
+    <script src="../scripts/modularity/topbar.js"></script>
+    <!--script src="../scripts/modularity/footer.js"></script-->
 
   </body>
 </html>
