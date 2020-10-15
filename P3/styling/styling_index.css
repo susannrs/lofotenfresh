@@ -13,6 +13,6 @@ body {
 }
 
 /*Move this part to main stylesheet if appropriate*/
-#openingHours {
+#openingHours, #welcomeMessage {
   text-align: center;
 }
