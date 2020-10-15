@@ -8,13 +8,13 @@ for (let image of images) { // Add eventlistener to all images of the menu
 function showIngredients(image) { // Make every ingredient image visible
   const ingredientImages = image.querySelectorAll(".ingredient");
   for (let ingredient of ingredientImages) {
-    ingredient.style.visibility = "visible";
+    ingredient.style.opacity = 1;
   }
 }
 
 function hideIngredients(image) { // Make every ingredient image hidden
   const ingredientImages = image.querySelectorAll(".ingredient");
   for (let ingredient of ingredientImages) {
-    ingredient.style.visibility = "hidden";
+    ingredient.style.opacity = 0;
   }
 }

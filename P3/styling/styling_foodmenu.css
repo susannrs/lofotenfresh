@@ -19,7 +19,8 @@ body {
 .ingredient {
   position: absolute;
   width: 25%;
-  visibility: hidden;
+  opacity: 0;
+  transition: opacity 1000ms;
 }
 
 .first {
