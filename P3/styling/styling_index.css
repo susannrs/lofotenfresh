@@ -5,15 +5,25 @@ body {
       rgba(22, 22, 22, 0.28),
       rgba(22, 22, 22, 0.28)
     ),
-    /*First mountain picture, then fish picture if the screen is long*/
-      url("../images/placeholder_index.jpg"),
-    url("../images/placeholder_index_2.jpg");
+    url("../images/placeholder_index_comp.jpg");
   background-size: cover;
-  background-repeat: repeat, no-repeat, no-repeat;
+  background-repeat: repeat, no-repeat;
 }
 
 /*Move this part to main stylesheet if appropriate*/
 #welcomeMessage,
 #openingHours {
   text-align: center;
+}
+
+@media (max-width: 900px) {
+  body {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(22, 22, 22, 0.28),
+        rgba(22, 22, 22, 0.28)
+      ),
+      url("../images/placeholder_index_small_alt1_combined.png");
+    background-repeat: repeat, repeat;
+  }
 }
