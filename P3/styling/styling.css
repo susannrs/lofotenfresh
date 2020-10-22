@@ -85,3 +85,23 @@ h5 {
   color: #f0f0f0;
   text-decoration: none;
 }
+
+/*Styling for enlarge_picture.js*/
+#largeImgContainer {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+}
+
+#overlay {
+  position: fixed;
+  display: none;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  background: rgba(0,0,0,.8);
+  z-index: 999;

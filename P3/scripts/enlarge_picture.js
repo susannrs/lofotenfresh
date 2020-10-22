@@ -15,11 +15,21 @@ function showEnlargedImg() {
   let imgElement = document.createElement("img");
   imgElement.src = imgSource.src;
   imgElement.alt = "Bigger image of " + imgSource.alt;
-  imgElement.style.display = "block";
   imgElement.addEventListener("click", removeEnlargedImg);
 
-  /*Gets the imgContainer and add the new img element into it*/
+  /*Gets the imgContainer*/
   let imgContainer = document.getElementById("largeImgContainer");
+
+  /*Checks the dimensions of the image and sets width/height accordingly*/
+  if (imgSource.clientWidth > imgSource.clientHeight) {
+    imgContainer.style = "display: block; width: 80%; height: auto;"
+    imgElement.style = "display: block; width: 100%; height: auto;"
+  } else {
+    imgContainer.style = "display: block; width: auto; height: 90%;"
+    imgElement.style = "display: block; width: auto; height: 100%;"
+  }
+
+  /*Adds the image element to the imgContainer*/
   imgContainer.appendChild(imgElement);
 
   /*Gets and display the overlay*/
@@ -39,5 +49,6 @@ function removeEnlargedImg () {
 
   /*Removes the large image*/
   let imgContainer = document.getElementById("largeImgContainer");
+  imgContainer.style.display = "none";
   imgContainer.innerHTML = "";
 }
