@@ -6,13 +6,16 @@
   <link rel="stylesheet" href="../styling/styling_foodmenu.css">
   <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Arimo&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+
   <title>Food Menu</title>
 
   <script>
     window.onload = function() {
       generateNavbar();
       generateTopbar("Menu");
-      //generatFooter();
+      generatFooter();
     };
   </script>
 </head>
@@ -21,12 +24,14 @@
   <div class="navbar"></div>
   <!-- Toptext will be implemented with JS, and  -->
   <div class="topbar"></div>
-  <section id="introtext">
-    <h2>Text</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fringilla dui nec libero molestie consectetur. Aliquam at turpis tristique, cursus ante vel, posuere nisl. In dictum scelerisque est a faucibus. Praesent massa arcu, tempor vitae convallis in, accumsan sit amet magna. In feugiat dictum aliquam. </p>
-  </section>
-  <!-- This section contains all the different items on the menu. -->
+  <div class="fullPage">
+
   <div class="Container">
+    <section id="introtext">
+      <h2>Text</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fringilla dui nec libero molestie consectetur. Aliquam at turpis tristique, cursus ante vel, posuere nisl. In dictum scelerisque est a faucibus. Praesent massa arcu, tempor vitae convallis in, accumsan sit amet magna. In feugiat dictum aliquam. </p>
+    </section>
+    <!-- This section contains all the different items on the menu. -->
     <!-- first food  -->
     <hr>
     <section class="flexContainer">
@@ -89,12 +94,14 @@
     <hr>
   </div>
   <div class="footer"></div>
-
+  </div>
   <script src="../scripts/ingredients.js"></script>
 
-  <!--Import navbar, topbar javascript files-->
+  <!--Import navbar, topbar and footer javascript files-->
   <script src="../scripts/modularity/navbar.js"></script>
   <script src="../scripts/modularity/topbar.js"></script>
+  <script src="../scripts/modularity/footer.js"></script>
+
 
 </body>
 </html>

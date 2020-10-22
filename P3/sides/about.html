@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="../styling/styling_about.css">
     <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Arimo&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
     <title>About</title>
 
     <script>
@@ -13,7 +14,7 @@
         // Below: Overriding the default paths when in index
         generateNavbar();
         generateTopbar("About us");
-        //generateFooter();
+        generateFooter();
       };
     </script>
   </head>
@@ -26,7 +27,7 @@
     <!--Topbar is containing logo, pagetitle and menu button. implemented throug js-->
     <header class="topbar">
     </header>
-
+    <div class="fullPage">
     <div class="mainContent">
       <!--This section contains information of Lofoten Fresh and the establishment-->
       <section class="flexContainer">
@@ -63,12 +64,14 @@
 
     <!--Footer is implemented throug js-->
     <footer class="footer"></footer>
+    </div>
 
     <script src="../scripts/enlarge_picture.js"></script>
 
-    <!--Import navbar, topbar javascript files-->
+    <!--Import navbar, topbar footer javascript files-->
     <script src="../scripts/modularity/navbar.js"></script>
     <script src="../scripts/modularity/topbar.js"></script>
+    <script src="../scripts/modularity/footer.js"></script>
 
     <div id="largeImgContainer"></div>
     <div id="overlay"></div>
