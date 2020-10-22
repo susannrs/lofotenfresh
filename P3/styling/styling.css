@@ -124,6 +124,7 @@ h5 {
     width: 15px;
     text-align: center;
     text-decoration: none;
+    border-radius: 100%;
 
 }
 .fa:hover {
