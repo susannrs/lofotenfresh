@@ -5,12 +5,20 @@
   <link rel="stylesheet" href="../styling/styling.css">
   <link rel="stylesheet" href="../styling/styling_foodmenu.css">
   <title>Food Menu</title>
+
+  <script>
+    window.onload = function() {
+      generateNavbar();
+      generateTopbar("Menu");
+      //generatFooter();
+    };
+  </script>
 </head>
 <body>
   <!-- The Navbar will be implimented with navbar -->
   <div class="navbar"></div>
   <!-- Toptext will be implemented with JS, and  -->
-  <div class="top"></div>
+  <div class="topbar"></div>
   <section id="introtext">
     <h2>Text</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fringilla dui nec libero molestie consectetur. Aliquam at turpis tristique, cursus ante vel, posuere nisl. In dictum scelerisque est a faucibus. Praesent massa arcu, tempor vitae convallis in, accumsan sit amet magna. In feugiat dictum aliquam. </p>
@@ -80,9 +88,11 @@
   </div>
   <div class="footer"></div>
 
-  <script src="../scripts/ingredients.js">
+  <script src="../scripts/ingredients.js"></script>
 
-  </script>
+  <!--Import navbar, topbar javascript files-->
+  <script src="../scripts/modularity/navbar.js"></script>
+  <script src="../scripts/modularity/topbar.js"></script>
 
 </body>
 </html>

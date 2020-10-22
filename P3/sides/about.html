@@ -5,15 +5,24 @@
     <link rel="stylesheet" href="../styling/styling.css">
     <link rel="stylesheet" href="../styling/styling_about.css">
     <title>About</title>
+
+    <script>
+      window.onload = function () {
+        // Below: Overriding the default paths when in index
+        generateNavbar();
+        generateTopbar("About us");
+        //generateFooter();
+      };
+    </script>
   </head>
   <body>
 
     <!--Navbar contains logo, navgiationoptions and cancel button-->
-    <div class="navBar">
+    <div class="navbar">
     </div>
 
     <!--Topbar is containing logo, pagetitle and menu button. implemented throug js-->
-    <header class="topBar">
+    <header class="topbar">
     </header>
 
     <div class="mainContent">
@@ -54,6 +63,10 @@
     <footer class="footer"></footer>
 
     <script src="../scripts/enlarge_picture.js"></script>
+
+    <!--Import navbar, topbar javascript files-->
+    <script src="../scripts/modularity/navbar.js"></script>
+    <script src="../scripts/modularity/topbar.js"></script>
 
     <div id="largeImgContainer"></div>
     <div id="overlay"></div>
