@@ -155,6 +155,10 @@ h5 {
 
 /*Responsive*/
 @media only screen and (max-width: 1000px) {
+  .mainContent {
+    width: 90%;
+  }
+
   .flexContainer {
     flex-direction: column;
   }
