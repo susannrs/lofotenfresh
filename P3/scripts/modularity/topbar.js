@@ -32,8 +32,8 @@ function generateTopbar(headingText,paths=defaultTopPaths,images=defaultTopImage
   logo.appendChild(logoImg);
 
   // TEXT
-  let node = document.createElement("h2");
-  node.style.display = "inline"; //h2 is block by default
+  let node = document.createElement("h1");
+  node.style.display = "inline"; //h1 is block by default
   node.setAttribute("class","pageTitle");
 
   let textNode = document.createTextNode(headingText); //Sets appropriate text when invoking function
