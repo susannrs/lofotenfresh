@@ -52,8 +52,8 @@ function generateNavbar(paths=defaultPaths,images=defaultImagePaths) {
   const textLinks = [paths.menu, paths.catering, paths.location, paths.about]
 
   for (let index = 0; index < navbarCategories.length; index++) {
-    let nodeWrapper = document.createElement("h1"); //Links are in h1 for main style to apply
-    nodeWrapper.style.display = "inline"; //h1 is block by default, this overrides with inline CSS
+    let nodeWrapper = document.createElement("h2"); //Links are in h1 for main style to apply
+    nodeWrapper.style.display = "inline"; //h2 is block by default, this overrides with inline CSS
     nodeWrapper.setAttribute("class","navbarText");
     let node = document.createElement("a");
     node.setAttribute("href",textLinks[index]);
