@@ -8,3 +8,17 @@ body {
   background-size: cover;
   background-repeat: repeat, no-repeat;
 }
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.orderButton {
+  padding: 5px 30px;
+  border: solid 3px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #f0f0f0;
+}

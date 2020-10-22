@@ -43,24 +43,45 @@ h5 {
   margin-bottom: 50px;
 }
 
-#largeImgContainer {
-  display: none;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  height: 90%;
-  width: auto;
-  z-index: 1000;
+/*Navbar and topbar styling*/
+
+/*Override default button css*/
+.navbar button,
+.topbar button {
+  /*color: rgba(00, 00, 00, 0);*/
+  background-color: rgba(00, 00, 00, 0); /*Color is whatever, but transparent*/
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 
-#overlay {
-  position: fixed;
-  display: none;
-  left: 0px;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  background: rgba(0,0,0,.8);
-  z-index: 999;
+/*Logo*/
+.cornerLogo {
+  width: 150px;
+  height: auto;
+}
+
+/*Outer flex container in topbar and navbar*/
+.flexWrapper {
+  margin: 30px; /*To not squisch logo and buttons into the side*/
+  display: flex;
+  justify-content: space-between; /*Just tried something here*/
+}
+
+/*Title is in topbar*/
+.pageTitle {
+  align-self: flex-end; /*Be on the bottom of the box*/
+}
+
+#navbarTextFlexContainer {
+  flex-grow: 1; /*This div takes up all available space*/
+  display: flex;
+  justify-content: space-evenly; /*Just tried something, looks good I think*/
+  align-items: center; /*Align text vertically in the middle*/
+}
+
+/*Override standard link styling*/
+#navbarTextFlexContainer h1 a {
+  color: #f0f0f0;
+  text-decoration: none;
 }

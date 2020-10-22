@@ -16,29 +16,37 @@ const defaultImagePaths = {
   };
 
 function generateNavbar(paths=defaultPaths,images=defaultImagePaths) {
+  //Use this reference a lot: Fetching the first aka [0] element with this class name
+  const navbar = document.getElementsByClassName("navbar")[0];
+
   // Default is always not to show navbar initially
-  document.getElementsByClassName("navbar")[0].style.display = "none";
+  navbar.style.display = "none";
+
+  //Create main flex wrapper
+  const wrapper = document.createElement("div");
+  wrapper.setAttribute("class","flexWrapper");
 
   //IMAGES
 
   let logo = document.createElement("a");
-  logo.setAttribute("href", paths.logo); //set link to index, same relative link problem as described below
+  logo.setAttribute("href", paths.logo); 
   let logoImg = document.createElement("img");
-  // Important: Path is from index file to the right picture, which means this wont work for other pages than main right now
-  logoImg.setAttribute("src", images.getLogo); //relative path problem
+  logoImg.setAttribute("src", images.getLogo);
+  logoImg.setAttribute("class","cornerLogo");
   logo.appendChild(logoImg);
 
-  let menuButtonClose = document.createElement("button"); //need to override the default CSS for buttons
+  let menuButtonClose = document.createElement("button");
   menuButtonClose.setAttribute("onclick", "closeNavbar()");
   let menuImgClose = document.createElement("img");
-  menuImgClose.setAttribute("src", images.getClose); //relative path problem
+  menuImgClose.setAttribute("src", images.getClose); 
   menuButtonClose.appendChild(menuImgClose);
 
   // TEXT
 
   // wrapper for the text in the navbar
   let links = document.createElement("div");
-  links.setAttribute("id","navbarFlexContainer");
+  links.setAttribute("id","navbarTextFlexContainer");
+  //links.style.display= "inline"; //Overrides the div default which is block
 
   //paths corresponding to text categories in navbar
   const textLinks = [paths.menu, paths.catering, paths.location, paths.about]
@@ -56,11 +64,10 @@ function generateNavbar(paths=defaultPaths,images=defaultImagePaths) {
   }
 
   //ADD EVERYTHING TO HTML
-
-  //fetching the first aka [0] element with this class name
-  document.getElementsByClassName("navbar")[0].appendChild(logo); //how can I add all the stuff at once?
-  document.getElementsByClassName("navbar")[0].appendChild(links);
-  document.getElementsByClassName("navbar")[0].appendChild(menuButtonClose);
+  navbar.appendChild(wrapper);
+  wrapper.appendChild(logo);
+  wrapper.appendChild(links);
+  wrapper.appendChild(menuButtonClose);
 }
 
 function closeNavbar() {
