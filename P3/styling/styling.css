@@ -42,3 +42,46 @@ h5 {
   margin-top: 50px;
   margin-bottom: 50px;
 }
+
+/*Navbar and topbar styling*/
+
+/*Override default button css*/
+.navbar button,
+.topbar button {
+  /*color: rgba(00, 00, 00, 0);*/
+  background-color: rgba(00, 00, 00, 0); /*Color is whatever, but transparent*/
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+/*Logo*/
+.cornerLogo {
+  width: 150px;
+  height: auto;
+}
+
+/*Outer flex container in topbar and navbar*/
+.flexWrapper {
+  margin: 30px; /*To not squisch logo and buttons into the side*/
+  display: flex;
+  justify-content: space-between; /*Just tried something here*/
+}
+
+/*Title is in topbar*/
+.pageTitle {
+  align-self: flex-end; /*Be on the bottom of the box*/
+}
+
+#navbarTextFlexContainer {
+  flex-grow: 1; /*This div takes up all available space*/
+  display: flex;
+  justify-content: space-evenly; /*Just tried something, looks good I think*/
+  align-items: center; /*Align text vertically in the middle*/
+}
+
+/*Override standard link styling*/
+#navbarTextFlexContainer h1 a {
+  color: #f0f0f0;
+  text-decoration: none;
+}
