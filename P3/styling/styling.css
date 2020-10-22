@@ -110,12 +110,12 @@ h5 {
   bottom: 0px;
   background: rgba(0,0,0,.8);
   z-index: 999;
+}
 
-
-.fullPage {
-    position: absolute;
-    min-height: 100%;
-  }
+.fullPage{
+  min-height: 100%;
+  position: absolute;
+}
 
 .fa {
     padding: 10px;
