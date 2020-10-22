@@ -28,6 +28,7 @@ p {
   color: #f0f0f0;
   font-family: "Arimo", arial, sans-serif;
   text-shadow: 2pt 2pt rgba(22, 22, 22, 0.28);
+  text-align: justify;
 }
 
 h1,
@@ -150,4 +151,23 @@ h5 {
   height:50px;
   background: #22222E;
   line-height: 50px;
+}
+
+/*Responsive*/
+@media only screen and (max-width: 800px) {
+  .flexContainer {
+    flex-direction: column;
+  }
+
+  .flexContainer:nth-of-type(2n+1) {
+    flex-direction: column-reverse;
+  }
+
+  .textBlock {
+    padding-bottom: 10px;
+  }
+
+  .imgBlock {
+    padding-top: 10px;
+  }
 }
