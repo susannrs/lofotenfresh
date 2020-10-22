@@ -114,6 +114,7 @@ h5 {
 
 .fullPage{
   min-height: 100%;
+  width: 100%;
   position: absolute;
 }
 
