@@ -5,8 +5,8 @@ body {
 }
 
 @font-face {
-  font-family: 'Bowlby One SC', cursive;
-  font-family: 'Arimo', cursive;
+  font-family: "Bowlby One SC", cursive;
+  font-family: "Arimo", cursive;
 }
 
 .flexContainer {
@@ -92,6 +92,14 @@ h5 {
   text-decoration: none;
 }
 
+#navbarTextFlexContainer h2 a:active {
+  color: #51b7ff;
+}
+
+#navbarTextFlexContainer h2 a:hover {
+  text-decoration: underline;
+}
+
 /*Styling for enlarge_picture.js*/
 #largeImgContainer {
   display: none;
@@ -109,7 +117,7 @@ h5 {
   top: 0px;
   right: 0px;
   bottom: 0px;
-  background: rgba(0,0,0,.8);
+  background: rgba(0, 0, 0, 0.8);
   z-index: 999;
 }
 
