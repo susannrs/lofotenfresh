@@ -1,18 +1,16 @@
 body {
-  /*Transparent over bg-images, don't know how to do it without gradient*/
   background-image: linear-gradient(
       to bottom,
       rgba(22, 22, 22, 0.28),
       rgba(22, 22, 22, 0.28)
     ),
-    /*First mountain picture, then fish picture if the screen is long*/
     url("../images/catering_background.jpg");
   background-size: cover;
-  background-repeat: repeat, no-repeat, no-repeat;
+  background-repeat: repeat, no-repeat;
 }
 
 .mainContent {
-  background-color: #F68035;
+  background-color: #f68035;
   padding: 2% 5%;
 }
 
@@ -30,7 +28,8 @@ label {
   padding: 5px;
 }
 
-input, textarea {
+input,
+textarea {
   width: 70%;
   margin-left: 10px;
   padding: 2px;
@@ -44,19 +43,19 @@ input, textarea {
 
 #cancel {
   background-color: Transparent;
-  color: #3279DE;
+  color: #3279de;
   font-family: "Arimo", arial, sans-serif;
   font-size: 12pt;
   padding: 5px 15px;
   border: solid;
-  border-color: #3279DE;
+  border-color: #3279de;
   border-radius: 4px;
   cursor: pointer;
   margin-right: 10px;
 }
 
 #submit {
-  background-color: #3279DE;
+  background-color: #3279de;
   color: white;
   font-family: "Arimo", arial, sans-serif;
   font-size: 12pt;
