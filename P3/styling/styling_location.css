@@ -1,14 +1,3 @@
-body {
-  background-image: linear-gradient(
-      to bottom,
-      rgba(22, 22, 22, 0.28),
-      rgba(22, 22, 22, 0.28)
-    ),
-    url("../images/placeholder_location.jpg");
-  background-size: cover;
-  background-repeat: repeat, no-repeat;
-}
-
 .flexContainer {
   align-items: stretch;
 }

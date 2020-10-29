@@ -1,5 +1,5 @@
 body {
-  /*Transparent over bg-images, don't know how to do it without gradient*/
+  /*Due to cascading hierarcy, the modular background_image.js will not work with media query.*/
   background-image: linear-gradient(
       to bottom,
       rgba(22, 22, 22, 0.28),
