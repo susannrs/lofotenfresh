@@ -1,14 +1,3 @@
-body {
-  background-image: linear-gradient(
-      to bottom,
-      rgba(22, 22, 22, 0.28),
-      rgba(22, 22, 22, 0.28)
-    ),
-    url("../images/catering_background.jpg");
-  background-size: cover;
-  background-repeat: repeat, no-repeat;
-}
-
 .mainContent {
   background-color: #f68035;
   padding: 2% 5%;
