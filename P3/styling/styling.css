@@ -33,9 +33,7 @@ p {
 
 h1,
 h2,
-h3,
-h4,
-h5 {
+h3 {
   color: #f0f0f0;
   font-family: "Bowlby One SC", arial black, sans-serif;
   text-shadow: 3pt 3pt rgba(22, 22, 22, 0.28);
@@ -162,7 +160,83 @@ h5 {
 }
 
 /*Responsive*/
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1000px) and (min-width: 690px) {
+  p {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 14.72px;
+  }
+
+  .cornerLogo,
+  .navbar button img,
+  .topbar button img {
+    width: 75px;
+    height: auto;
+  }
+
+  .mainContent {
+    width: 90%;
+  }
+
+  .flexContainer {
+    flex-direction: column;
+  }
+
+  .flexContainer:nth-of-type(2n+1) {
+    flex-direction: column-reverse;
+  }
+
+  .textBlock {
+    padding-bottom: 10px;
+  }
+
+  .imgBlock {
+    padding-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 689px) {
+  p {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 14.72px;
+  }
+
+  #navbarTextFlexContainer {
+    flex-direction: column;
+  }
+
+  .flexWrapper {
+    align-items: flex-start;
+  }
+
+  .cornerLogo,
+  .navbar button img,
+  .topbar button img {
+    width: 75px;
+    height: auto;
+  }
+
   .mainContent {
     width: 90%;
   }
