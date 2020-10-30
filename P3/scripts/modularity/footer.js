@@ -21,7 +21,7 @@ function generateFooter() {
 
     // Make Text field
     var para = document.createElement("p");
-    var soMeText = document.createTextNode("Some text here in Arimo 24pt next to SoMe buttons. No drop shadow.");
+    var soMeText = document.createTextNode("Made by: Anne Margrethe Bosch, Aksel Kirknes, Susanne Rynning Seip, Viggo Skarby og Vegard Tuset");
 
     // Add text field to footer
     document.getElementsByClassName("footer")[0].appendChild(soMeText);
