@@ -1,8 +1,10 @@
+// Initializing Date object to get time and date.
 var today = new Date();
 var thisHour = today.getHours();
 var thisDay = today.getDay();
 var greeting;
 
+// Defining the welcome messages for weekdays and at what time they should be diplayed.
 function setGreetingWeekdays(){
   if (5 <= thisHour && thisHour < 12) {
     greeting = "Good morning! <br /> Lofoten Fresh also works as lunch <br /> We welcome you at 15:00!"
@@ -22,6 +24,7 @@ function setGreetingWeekdays(){
   return greeting;
 }
 
+// Defining the welcome messages for saturday acording to the current time.
 function setGreetingSaturday(){
   if (5 <= thisHour && thisHour < 12) {
     greeting = "Good morning! <br /> Lofoten Fresh also works as lunch <br /> We welcome you at 15:00!"
@@ -41,6 +44,7 @@ function setGreetingSaturday(){
   return greeting;
 }
 
+//Defining the welcome messages for Sunday acording to the current time.
 function setSunday(){
   if (thisHour < 5) {
     greeting = "Zzz Zzz"
@@ -54,7 +58,7 @@ function setSunday(){
   return greeting;
 }
 
-
+//Checking what day it is to decide what function to use.
 if (1 <= thisDay && thisDay <= 4) {
   document.getElementById("welcomeMessage").innerHTML = setGreetingWeekdays();
 }

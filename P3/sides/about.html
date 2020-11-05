@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <title>About</title>
     <meta charset="utf-8">
     <title>About | Lofoten Fresh</title>
     <link rel="shortcut icon" href="../images/favicon.ico">
 
     <link rel="stylesheet" href="../styling/styling.css">
-    <link rel="stylesheet" href="../styling/styling_about.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
-    <title>About</title>
+    
     <script>
       window.onload = function () {
         // Below: Overriding the default paths when in index
         generateNavbar();
         generateTopbar("About");
         generateFooter();
+        generateBackgroundImage("../images/background_about.jpg", true);  
       };
     </script>
+    
   </head>
   <body>
 
@@ -60,10 +62,10 @@
       </section>
     </div>
     </div>
-
+    
     <!--Footer is implemented throug js-->
     <footer class="footer"></footer>
-    
+
     <!--Import script to enlargen picture-->
     <script src="../scripts/enlarge_picture.js"></script>
 
@@ -71,7 +73,8 @@
     <script src="../scripts/modularity/navbar.js"></script>
     <script src="../scripts/modularity/topbar.js"></script>
     <script src="../scripts/modularity/footer.js"></script>
-    
+    <script src="../scripts/modularity/background_image.js"></script>
+
     <!--Adding divs which is used for enlargening the pictures if pressed-->
     <div id="largeImgContainer"></div>
     <div id="overlay"></div>
