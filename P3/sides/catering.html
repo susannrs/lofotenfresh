@@ -2,13 +2,16 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Catering</title>
+    <title>Catering | Lofoten Fresh</title>
+    <link rel="shortcut icon" href="../images/favicon.ico">
+
     <link rel="stylesheet" href="../styling/styling.css">
     <link rel="stylesheet" href="../styling/styling_catering.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
 
     <script>
       window.onload = function() {
+        // Below: Overriding the default paths when in index
         generateNavbar();
         generateTopbar("Catering");
         generateFooter();
@@ -19,7 +22,9 @@
   </head>
   <body>
 
+    <!--Navbar contains logo, navgiationoptions and cancel button-->
     <div class="navbar"></div>
+
 
     <header class="topbar"></header>
     <div class="fullPage">
@@ -31,6 +36,7 @@
 
     <div>
 
+      <!--Picture and text about a wedding gig-->
       <section class="flexContainer">
         <div class="imgBlock">
           <img src="../images/wedding_img.jpg" alt="Wedding" width=100%>
@@ -41,6 +47,7 @@
         </div>
       </section>
 
+      <!--Picture and text about a birthday gig-->
       <section class="flexContainer">
         <div class="textBlock">
           <h2>Birthday</h2>
@@ -51,6 +58,7 @@
         </div>
       </section>
 
+      <!--Picture and text about bar mitzvah gig-->
       <section class="flexContainer">
         <div class="imgBlock">
           <img src="../images/bar_mitzvah_img.jpg" alt="Bar mitzvah" width=100%>
@@ -62,9 +70,9 @@
       </section>
 
     </div>
+  </div>
 
     <footer class="footer"></footer>
-    </div>
 
     <!--script src="../scripts/modularity/footer.js"></script-->
     <script src="../scripts/enlarge_picture.js"></script>
