@@ -9,13 +9,17 @@ body {
 /* Initiating and importing the font "Bowlby One SC as the heading fonts" */
 @font-face {
   font-family: Bowlby One SC;
-  src: local('Bowlby One SC Regular'), local('BowlbyOneSC-Regular'), url(https://fonts.gstatic.com/s/bowlbyonesc/v12/DtVlJxerQqQm37tzN3wMug9P_g_2og.woff2) format('woff2');
+  src: local("Bowlby One SC Regular"), local("BowlbyOneSC-Regular"),
+    url(https://fonts.gstatic.com/s/bowlbyonesc/v12/DtVlJxerQqQm37tzN3wMug9P_g_2og.woff2)
+      format("woff2");
 }
 
 /* Initiating and importing the font "Arimo" as the paragraph font */
 @font-face {
   font-family: Arimo;
-  src: local('Arimo Regular'), local('Arimo-Regular'), url(https://fonts.gstatic.com/s/arimo/v15/P5sMzZCDf9_T_10axCF8jA.woff2) format('woff2');
+  src: local("Arimo Regular"), local("Arimo-Regular"),
+    url(https://fonts.gstatic.com/s/arimo/v15/P5sMzZCDf9_T_10axCF8jA.woff2)
+      format("woff2");
 }
 
 /* styleing flexcontainers on the sites */
@@ -37,7 +41,7 @@ body {
 /* Sets color, font and shadow to the paragraph and heading texts, aswell as fallback fonts */
 p {
   color: #f0f0f0;
-  font-family: 'Arimo', arial, sans-serif;
+  font-family: "Arimo", arial, sans-serif;
   text-shadow: 2pt 2pt rgba(22, 22, 22, 0.28);
   text-align: justify;
 }
@@ -46,7 +50,7 @@ h1,
 h2,
 h3 {
   color: #f0f0f0;
-  font-family: 'Bowlby One SC', arial black, sans-serif;
+  font-family: "Bowlby One SC", arial black, sans-serif;
   text-shadow: 3pt 3pt rgba(22, 22, 22, 0.28);
   text-transform: uppercase;
 }
@@ -69,6 +73,7 @@ h3 {
   border: none;
   outline: none;
   cursor: pointer;
+  width: 150px;
 }
 
 /*Logo*/
@@ -131,6 +136,7 @@ h3 {
   z-index: 999;
 }
 
+
 /* Sets the fullPage to 100% to make footer wide enough */
 .fullPage{
   height: 100%;
@@ -138,21 +144,21 @@ h3 {
 
 /* Styling the SoMe icons */
 .fa {
-    padding: 10px;
-    font-size: 20px;
-    width: 15px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 100%;
-    position: relative;
+  padding: 10px;
+  font-size: 20px;
+  width: 15px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 100%;
 }
 
 .fa:hover {
   opacity: 0.7;
 }
+
 /* Facebook styling*/
 .fa-facebook {
-  background: #3B5998;
+  background: #3b5998;
   color: white;
 }
 
@@ -160,6 +166,7 @@ h3 {
 .fa-instagram {
   background: white;
 }
+
 
 /* Sets the style for footer, and sticks it to the bottom of the page */
 .footer{
@@ -169,12 +176,11 @@ h3 {
   bottom: 0px;
   left: 0px;
   width: 100%;
-  height:70px;
-  background: #22222E;
+  height: 70px;
+  background: #22222e;
   line-height: 70px;
-  flex-shrink:  0;
+  flex-shrink: 0;
 }
-
 
 /*Responsive*/
 @media only screen and (max-width: 1000px) and (min-width: 690px) {
@@ -209,7 +215,7 @@ h3 {
     flex-direction: column;
   }
 
-  .flexContainer:nth-of-type(2n+1) {
+  .flexContainer:nth-of-type(2n + 1) {
     flex-direction: column-reverse;
   }
 
@@ -269,7 +275,7 @@ h3 {
     flex-direction: column;
   }
 
-  .flexContainer:nth-of-type(2n+1) {
+  .flexContainer:nth-of-type(2n + 1) {
     flex-direction: column-reverse;
   }
 
