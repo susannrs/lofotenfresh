@@ -1,20 +1,23 @@
+/* Definding the bodys restrictions */
 body {
   width: 100%;
   margin: 0;
   padding: 0;
 }
 
+/* Initiating and importing the font "Bowlby One SC as the heading fonts" */
 @font-face {
   font-family: Bowlby One SC;
   src: local('Bowlby One SC Regular'), local('BowlbyOneSC-Regular'), url(https://fonts.gstatic.com/s/bowlbyonesc/v12/DtVlJxerQqQm37tzN3wMug9P_g_2og.woff2) format('woff2');
-
 }
 
+/* Initiating and importing the font "Arimo" as the paragraph font */
 @font-face {
   font-family: Arimo;
-  src: local('Arimo Regular'), local('Arimo-Regular'), url(https://fonts.gstatic.com/s/arimo/v15/P5sMzZCDf9_T_10axCF8jA.woff2) format('woff2'); 
+  src: local('Arimo Regular'), local('Arimo-Regular'), url(https://fonts.gstatic.com/s/arimo/v15/P5sMzZCDf9_T_10axCF8jA.woff2) format('woff2');
 }
 
+/* styleing flexcontainers on the sites */
 .flexContainer {
   display: flex;
   align-items: center;
@@ -30,6 +33,7 @@ body {
   padding: 50px;
 }
 
+/* Sets color, font and shadow to the paragraph and heading texts, aswell as fallback fonts */
 p {
   color: #f0f0f0;
   font-family: 'Arimo', arial, sans-serif;
@@ -46,6 +50,7 @@ h3 {
   text-transform: uppercase;
 }
 
+/* Sets the content of the page to be 80% of the body and centered */
 .mainContent {
   width: 80%;
   margin: auto;
@@ -75,7 +80,7 @@ h3 {
 .flexWrapper {
   margin: 30px; /*To not squisch logo and buttons into the side*/
   display: flex;
-  justify-content: space-between; /*Just tried something here*/
+  justify-content: space-between;
 }
 
 /*Title is in topbar*/
@@ -86,7 +91,7 @@ h3 {
 #navbarTextFlexContainer {
   flex-grow: 1; /*This div takes up all available space*/
   display: flex;
-  justify-content: space-evenly; /*Just tried something, looks good I think*/
+  justify-content: space-evenly;
   align-items: center; /*Align text vertically in the middle*/
 }
 
@@ -216,6 +221,7 @@ h3 {
   }
 }
 
+/* Scales the content if the window is smaler than 689px */
 @media only screen and (max-width: 689px) {
   p {
     font-size: 14px;

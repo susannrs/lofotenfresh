@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <title>About</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="../styling/styling.css">
-    <link rel="stylesheet" href="../styling/styling_about.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
-    <title>About</title>
 
     <script>
       window.onload = function () {
         // Below: Overriding the default paths when in index
         generateNavbar();
-        generateTopbar("About us");
+        generateTopbar("About");
         generateFooter();
-        generateBackgroundImage("../images/background_about.jpg");
+        generateBackgroundImage("../images/background_about.jpg", true);
       };
     </script>
   </head>
@@ -62,7 +61,7 @@
     <!--Footer is implemented throug js-->
     <footer class="footer"></footer>
     </div>
-
+    <!--Import script to enlargen picture-->
     <script src="../scripts/enlarge_picture.js"></script>
 
     <!--Import navbar, topbar footer javascript files-->
@@ -71,6 +70,7 @@
     <script src="../scripts/modularity/footer.js"></script>
     <script src="../scripts/modularity/background_image.js"></script>
 
+    <!--Adding divs which is used for enlargening the pictures if pressed-->
     <div id="largeImgContainer"></div>
     <div id="overlay"></div>
   </body>
