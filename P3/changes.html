@@ -32,6 +32,31 @@
             </ul>
         </div>
         <div>
+          <h1>Hvordan vi har innfridd minimumskravene</h1>
+          <ul>
+              <li>
+                  <p><strong>Navigasjonsbar</strong> (Anne): <br>
+                  Anne innfridde minimumskravet om en lik navigasjonsbar på alle sidene ved å lage navbar.js og topbar.js som blir importert til alle sidene på nettstedet. Funksjonene generateNavbar() og generateTopbar() i head genererer så navigasjonsbar</p>
+              </li>
+              <li>
+                  <p><strong>Footer</strong> (Vegard): <br>
+                  Vegard innfridde minimumskravet om en lik footer på alle sidene ved å lage footer.js som blir importert til alle sidene på nettstedet. Funksjonen generateFooter() i head genererer så footern.</p>
+              </li>
+              <li>
+                  <p><strong>Velkomstmelding</strong> (Aksel): <br>
+                    Aksel innfridde minimumskravet om en velkomstmelding på forsiden ved å lage welcome.js som blir importert på index.html. Når forsiden blir lastet inn sjekkes ukedag og klokkeslett med henholdvis getDay() og getHours(), og så endres teksten i p-elementet med id "welcomeMessage" til den passende meldingen.</p>
+              </li>
+              <li>
+                  <p><strong>Fra matrett til råvarer</strong> (Viggo): <br>
+                    Viggo innfridde minimumskravet om at når musepekeren hover over bilder av matrettene i menyen så skal bilder av råvarene dukke opp ved å lage ingredients.js som blir importert på food_menu.html. Når siden lastes inn blir det ved en løkke lagdt til to eventListeners til alle div'er på siden med klasse "imgBlock". Når musa føres over bildet settes opacity på alle tilhørende ingrediensbilder fra 0 til 1, og en transition i CSS gjør at det fades. Det motsatte skjer når musepekeren går bort fra bildet igjen.</p>
+              </li>
+              <li>
+                  <p><strong>Bildene forstørres når man klikker på dem</strong> (Susanne): <br>
+                    Susanne innfridde minimumskravet om å forstørre bilder når man klikker på dem ved å lage enlarge_picture.js som ble importert til catering.html og about.html. (Vi valgte å ikke legge til food_menu.html så den ikke konkurerte med ingredients.js eller location.html siden den ikke har noen bilder.) Når siden lastes inn blir det ved en løkke lagt til en eventListener til alle img-elementer. Når et bilde klikkes vil kildefila til bildet funnet med event.src, som så legges inn i div'en med id "largeImgContainer". Sammen med overlayet vises bildet ved å sette display til "block". Om bildet eller overlayet klikkes blir de fjernet igjen med "none" og tøming av div'en.</p>
+              </li>
+          </ul>
+        </div>
+        <div>
             <h1>Hvem har gjort hva</h1>
             <h2>Aksel</h2>
             <ul>
