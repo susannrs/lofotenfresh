@@ -1,19 +1,21 @@
 .mainContent {
-  background-color: #f68035;
+  background-color: #f68035; /*From color palette*/
   padding: 2% 5%;
   border-radius: 5px;
 }
 
+/*Removed shadow in form due to solid color background*/
 p {
   text-shadow: none;
 }
 
+/*Information about the form being closed at the moment*/
 #closedMessage {
   width: 70%;
   margin: auto;
-  background-color: #f0f0f0;
+  background-color: #f0f0f0; /*From color palette*/
   border: solid;
-  border-color: #3279de;
+  border-color: #3279de; /*From color palette*/
   border-radius: 5px;
 }
 
@@ -28,25 +30,29 @@ label {
   font-size: 18px;
 }
 
+/*Each input field is right-aligned*/
 .row {
   display: flex;
   justify-content: flex-end;
   padding: 5px;
 }
 
+/*Aesthetics and more spacing around input fields*/
 input,
 textarea {
-  width: 70%;
+  width: 70%; /*Default width for different input fields are not the same, changed width for aesthetics rather than functionality*/
   margin-left: 10px;
   padding: 2px;
 }
 
+/*Box of buttons*/
 #buttons {
   display: flex;
   justify-content: flex-end;
   padding: 0 20px;
 }
 
+/*Specific for cancel button*/
 #cancel {
   background-color: Transparent;
   color: #3279de;
@@ -60,9 +66,10 @@ textarea {
   margin-right: 10px;
 }
 
+/*Specific for submit button*/
 #submit {
   background-color: #3279de;
-  color: white;
+  color: #f0f0f0;
   font-family: "Arimo", arial, sans-serif;
   font-size: 12pt;
   padding: 5px 15px;
@@ -70,7 +77,7 @@ textarea {
   border-radius: 4px;
   cursor: pointer;
 }
-
+/*Override default*/
 fieldset {
   border: none;
 }
