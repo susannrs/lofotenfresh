@@ -131,10 +131,12 @@ h3 {
   z-index: 999;
 }
 
+/* Sets the fullPage to 100% to make footer wide enough */
 .fullPage{
   height: 100%;
 }
 
+/* Styling the SoMe icons */
 .fa {
     padding: 10px;
     font-size: 20px;
@@ -147,19 +149,21 @@ h3 {
 .fa:hover {
   opacity: 0.7;
 }
-  /* Facebook */
+/* Facebook styling*/
 .fa-facebook {
   background: #3B5998;
   color: white;
 }
+
+/* Instagram styling */
 .fa-instagram {
   background: white;
 }
 
+/* Sets the style for footer, and sticks it to the bottom of the page */
 .footer{
   color: #f0f0f0;
   font-family: "Arimo", arial, sans-serif;
-  /* position: absolute; */
   text-align: left;
   bottom: 0px;
   left: 0px;
