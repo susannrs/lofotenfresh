@@ -2,6 +2,7 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
+  flex-direction: column;
 }
 
 @font-face {
@@ -126,9 +127,7 @@ h3 {
 }
 
 .fullPage{
-  min-height: 100%;
-  width: 100%;
-  position: absolute;
+  height: 100%;
 }
 
 .fa {
@@ -155,7 +154,7 @@ h3 {
 .footer{
   color: #f0f0f0;
   font-family: "Arimo", arial, sans-serif;
-  position: absolute;
+  /* position: absolute; */
   text-align: left;
   bottom: 0px;
   left: 0px;
@@ -163,7 +162,9 @@ h3 {
   height:70px;
   background: #22222E;
   line-height: 70px;
+  flex-shrink:  0;
 }
+
 
 /*Responsive*/
 @media only screen and (max-width: 1000px) and (min-width: 690px) {
@@ -213,6 +214,7 @@ h3 {
   .footer {
     line-height: 70px;
     font-size: 14px;
+    white-space: nowrap;
   }
 }
 
