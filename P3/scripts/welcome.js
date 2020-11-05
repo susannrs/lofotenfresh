@@ -22,7 +22,7 @@ function setGreetingWeekdays(){
   return greeting;
 }
 
-function setGreetingWeekends(){
+function setGreetingSaturday(){
   if (5 <= thisHour && thisHour < 12) {
     greeting = "Good morning! <br /> Lofoten Fresh also works as lunch <br /> We welcome you at 15:00!"
   }
@@ -41,10 +41,26 @@ function setGreetingWeekends(){
   return greeting;
 }
 
+function setSunday(){
+  if (thisHour < 5) {
+    greeting = "Zzz Zzz"
+  }
+  else if (5 <= thisHour < 12) {
+    greeting = "Have a greate sunday morning!"
+  }
+  else if (12 <= thisHour < 24) {
+    greeting = "We are closed today <br /> see you tomorrow?"
+  }
+  return greeting;
+}
+
 
 if (1 <= thisDay && thisDay <= 4) {
   document.getElementById("welcomeMessage").innerHTML = setGreetingWeekdays();
 }
+else if (thisDay == 5) {
+  document.getElementById("welcomeMessage").innerHTML = setSaturday();
+}
 else {
-  document.getElementById("welcomeMessage").innerHTML = setGreetingWeekends();
+  document.getElementById("welcomeMessage").innerHTML = setSunday();
 }
