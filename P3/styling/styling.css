@@ -76,6 +76,11 @@ h3 {
   width: 150px;
 }
 
+.topbar button img,
+.navbar button img{
+  width: 99px;
+}
+
 /*Logo*/
 .cornerLogo {
   width: 150px;
@@ -180,6 +185,15 @@ h3 {
   background: #22222e;
   line-height: 70px;
   flex-shrink: 0;
+}
+
+img {
+  width: 100%;
+}
+
+#sigur_img{
+  width: 70%;
+  height: 70%
 }
 
 /*Responsive*/
