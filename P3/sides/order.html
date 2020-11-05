@@ -2,12 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Order Catering</title>
+    <title>Order Catering | Lofoten Fresh</title>
+    <link rel="shortcut icon" href="../images/favicon.ico">
+
 
     <link href="../styling/styling.css" rel="stylesheet" />
     <link href="../styling/styling_order.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Arimo&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
     <script>
@@ -30,35 +30,71 @@
       <p>Here you can submit a request for catering from Lofoten Fresh.</p> <p>Just enter your contact information, a brief description of the occasion and the desired date. (If there are multiple possible dates for the occasion choose the one that's most likely, and we'll take it from there.) After you've submitted your request Sigur will contact you as soon as possible, and hopefully there'll be some delicious fast slowfood in your near future!
       </p>
       <div id="closedMessage">
-        <p>THE ORDER FORM IS UNFORTUNATELY CLOSED AT THE MOMENT</p>
+        <p>
+          THE ORDER FORM IS UNFORTUNATELY CLOSED AT THE MOMENT <br>
+          The submit button will take you to the home page.
+        </p>
       </div>
+      <!--All fields are required except Details-->
       <form id="orderForm" action="../index.html" method="post">
         <fieldset>
           <div class="row">
             <label for="name">Name</label>
-            <input type="text" id="name" name="name">
+            <!--Name must be alphabetic characters-->
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              pattern="[a-zA-Z ]*"
+              title="Names must only contain alphabetic characters.">
           </div>
           <div class="row">
             <label for="number">Phone number</label>
-            <input type="text" id="number" name="number">
+            <input
+              type="text"
+              id="number"
+              name="number"
+              required>
           </div>
           <div class="row">
             <label for="email">Email</label>
-            <input type="email" id="eamil" name="email">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required>
           </div>
         </fieldset>
         <fieldset>
           <div class="row">
             <label for="occasion">Occasion</label>
-            <input type="text" id="occasion" name="occasion">
+            <!--Occasion is limited to max 50 characters-->
+            <input
+              type="text"
+              id="occasion"
+              name="occasion"
+              maxlength="50"
+              required>
           </div>
           <div class="row">
             <label for="date">Date</label>
-            <input type="date" id="date" name="date">
+            <input
+              type="date"
+              id="date"
+              name="date"
+              required
+              min="2020-01-01">
           </div>
           <div class="row">
             <label for="details">Details</label>
-            <textarea id="details" name="details" rows="8" cols="50"></textarea>
+            <!--Details is optional-->
+            <textarea
+              id="details"
+              name="details"
+              rows="8"
+              cols="50">
+            </textarea>
           </div>
         </fieldset>
         <fieldset id="buttons">

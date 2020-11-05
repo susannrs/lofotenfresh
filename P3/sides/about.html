@@ -2,19 +2,18 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <title>About | Lofoten Fresh</title>
+    <link rel="shortcut icon" href="../images/favicon.ico">
+
     <link rel="stylesheet" href="../styling/styling.css">
     <link rel="stylesheet" href="../styling/styling_about.css">
-    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Arimo&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
-
     <title>About</title>
-
     <script>
       window.onload = function () {
         // Below: Overriding the default paths when in index
         generateNavbar();
-        generateTopbar("About us");
+        generateTopbar("About");
         generateFooter();
       };
     </script>
@@ -37,11 +36,10 @@
         </div>
         <div class="textBlock">
           <h2>Lofoten Fresh</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed felis magna. Maecenas quam elit, fringilla nec est sed, convallis posuere velit.
-            Quisque rutrum sed risus ut tempor. Suspendisse id mattis justo. Donec quis dui convallis, dictum neque sit amet, tincidunt massa. Duis tristique lorem
-            non mollis vulputate. Nulla eget tincidunt leo. Curabitur nisl massa, tempus ut facilisis nec, lacinia a urna. Phasellus erat dui, iaculis eu convallis non,
-            gravida vel metus. Aenean vitae luctus purus, non lobortis quam. Phasellus mi nibh, convallis pulvinar mattis eget, tempor dictum justo. Praesent id risus
-            eget sem scelerisque commodo.
+          <p>
+            Lofoten Fresh is a newly created food truck that aims to give the locals and tourists of Lofoten a fresh treat.
+            The food truck slogan is "fast slow-food". With that, the food truck wants to give the customers another option
+            relative to the traditional restaurants, as well as deliver the ascetically and tastefully dishes in record time.
           </p>
         </div>
       </section>
@@ -50,11 +48,10 @@
       <section class="flexContainer">
         <div class="textBlock">
           <h2>Sigur Skarby</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed felis magna. Maecenas quam elit, fringilla nec est sed, convallis posuere velit.
-            Quisque rutrum sed risus ut tempor. Suspendisse id mattis justo. Donec quis dui convallis, dictum neque sit amet, tincidunt massa. Duis tristique lorem
-            non mollis vulputate. Nulla eget tincidunt leo. Curabitur nisl massa, tempus ut facilisis nec, lacinia a urna. Phasellus erat dui, iaculis eu convallis non,
-            gravida vel metus. Aenean vitae luctus purus, non lobortis quam. Phasellus mi nibh, convallis pulvinar mattis eget, tempor dictum justo. Praesent id risus
-            eget sem scelerisque commodo.
+          <p>
+            Sigur Skarby has a long experience with cooking and is a trained chef. He got the sudden realization that he needed
+            to give the locals and tourists of Lofoten a taste of its fresh ingredients. The result was Lofoten Fresh. Sigur is
+            born and raised in Lofoten, which makes him the perfect mediator of what Lofoten has to give.
           </p>
         </div>
         <div class="imgBlock">
@@ -66,14 +63,16 @@
 
     <!--Footer is implemented throug js-->
     <footer class="footer"></footer>
-
+    
+    <!--Import script to enlargen picture-->
     <script src="../scripts/enlarge_picture.js"></script>
 
     <!--Import navbar, topbar footer javascript files-->
     <script src="../scripts/modularity/navbar.js"></script>
     <script src="../scripts/modularity/topbar.js"></script>
     <script src="../scripts/modularity/footer.js"></script>
-
+    
+    <!--Adding divs which is used for enlargening the pictures if pressed-->
     <div id="largeImgContainer"></div>
     <div id="overlay"></div>
   </body>

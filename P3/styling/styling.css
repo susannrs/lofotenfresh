@@ -6,8 +6,14 @@ body {
 }
 
 @font-face {
-  font-family: "Bowlby One SC", cursive;
-  font-family: "Arimo", cursive;
+  font-family: Bowlby One SC;
+  src: local('Bowlby One SC Regular'), local('BowlbyOneSC-Regular'), url(https://fonts.gstatic.com/s/bowlbyonesc/v12/DtVlJxerQqQm37tzN3wMug9P_g_2og.woff2) format('woff2');
+
+}
+
+@font-face {
+  font-family: Arimo;
+  src: local('Arimo Regular'), local('Arimo-Regular'), url(https://fonts.gstatic.com/s/arimo/v15/P5sMzZCDf9_T_10axCF8jA.woff2) format('woff2'); 
 }
 
 .flexContainer {
@@ -27,7 +33,7 @@ body {
 
 p {
   color: #f0f0f0;
-  font-family: "Arimo", arial, sans-serif;
+  font-family: 'Arimo', arial, sans-serif;
   text-shadow: 2pt 2pt rgba(22, 22, 22, 0.28);
   text-align: justify;
 }
@@ -36,7 +42,7 @@ h1,
 h2,
 h3 {
   color: #f0f0f0;
-  font-family: "Bowlby One SC", arial black, sans-serif;
+  font-family: 'Bowlby One SC', arial black, sans-serif;
   text-shadow: 3pt 3pt rgba(22, 22, 22, 0.28);
   text-transform: uppercase;
 }
