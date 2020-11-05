@@ -74,3 +74,7 @@ table, th, td {
   border-collapse: collapse;
   padding: 3px;
 }
+
+img {
+  width: 100%;
+}
