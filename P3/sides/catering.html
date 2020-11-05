@@ -11,6 +11,7 @@
 
     <script>
       window.onload = function() {
+        // Below: Overriding the default paths when in index
         generateNavbar();
         generateTopbar("Catering");
         generateFooter();
@@ -21,7 +22,9 @@
   </head>
   <body>
 
+    <!--Navbar contains logo, navgiationoptions and cancel button-->
     <div class="navbar"></div>
+
 
     <header class="topbar"></header>
     <div class="fullPage">
@@ -33,9 +36,10 @@
 
     <div>
 
+      <!--Picture and text about a wedding gig-->
       <section class="flexContainer">
         <div class="imgBlock">
-          <img src="../images/wedding_img.jpg" alt="Wedding" width=100%>
+          <img src="../images/wedding_img.jpg" alt="An Indonesian bridal couple smiling happily on their wedding day" width=100%>
         </div>
         <div class="textBlock">
           <h2>Wedding</h2>
@@ -43,19 +47,21 @@
         </div>
       </section>
 
+      <!--Picture and text about a birthday gig-->
       <section class="flexContainer">
         <div class="textBlock">
           <h2>Birthday</h2>
           <p>What better way to celebrate than to sit down and enjoy a tasteful meal with good friends? By taking advantage of catering from Lofoten Fresh you may experience the birthday of a lifetime without even lifting a finger. With the immense mastery of our chef, and the alluring freshness of local delicacies, we can promise an ecstatic party around the table and on your tastebuds.</p>
         </div>
         <div class="imgBlock">
-          <img src="../images/birthday_img.jpg" alt="Birthday" width=100%>
+          <img src="../images/birthday_img.jpg" alt="A group of friends making a toast with glasses of white wine" width=100%>
         </div>
       </section>
 
+      <!--Picture and text about bar mitzvah gig-->
       <section class="flexContainer">
         <div class="imgBlock">
-          <img src="../images/bar_mitzvah_img.jpg" alt="Bar mitzvah" width=100%>
+          <img src="../images/bar_mitzvah_img.jpg" alt="A table set for a party on the beach with red napkins and white flowers" width=100%>
         </div>
         <div class="textBlock">
           <h2>Bar mitzvah</h2>
@@ -64,9 +70,9 @@
       </section>
 
     </div>
+  </div>
 
     <footer class="footer"></footer>
-    </div>
 
     <!--script src="../scripts/modularity/footer.js"></script-->
     <script src="../scripts/enlarge_picture.js"></script>

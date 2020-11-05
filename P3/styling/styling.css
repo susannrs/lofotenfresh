@@ -1,20 +1,28 @@
+/* Definding the bodys restrictions */
 body {
   width: 100%;
   margin: 0;
   padding: 0;
+  flex-direction: column;
 }
 
+/* Initiating and importing the font "Bowlby One SC as the heading fonts" */
 @font-face {
   font-family: Bowlby One SC;
-  src: local('Bowlby One SC Regular'), local('BowlbyOneSC-Regular'), url(https://fonts.gstatic.com/s/bowlbyonesc/v12/DtVlJxerQqQm37tzN3wMug9P_g_2og.woff2) format('woff2');
-
+  src: local("Bowlby One SC Regular"), local("BowlbyOneSC-Regular"),
+    url(https://fonts.gstatic.com/s/bowlbyonesc/v12/DtVlJxerQqQm37tzN3wMug9P_g_2og.woff2)
+      format("woff2");
 }
 
+/* Initiating and importing the font "Arimo" as the paragraph font */
 @font-face {
   font-family: Arimo;
-  src: local('Arimo Regular'), local('Arimo-Regular'), url(https://fonts.gstatic.com/s/arimo/v15/P5sMzZCDf9_T_10axCF8jA.woff2) format('woff2'); 
+  src: local("Arimo Regular"), local("Arimo-Regular"),
+    url(https://fonts.gstatic.com/s/arimo/v15/P5sMzZCDf9_T_10axCF8jA.woff2)
+      format("woff2");
 }
 
+/* styleing flexcontainers on the sites */
 .flexContainer {
   display: flex;
   align-items: center;
@@ -30,9 +38,10 @@ body {
   padding: 50px;
 }
 
+/* Sets color, font and shadow to the paragraph and heading texts, aswell as fallback fonts */
 p {
   color: #f0f0f0;
-  font-family: 'Arimo', arial, sans-serif;
+  font-family: "Arimo", arial, sans-serif;
   text-shadow: 2pt 2pt rgba(22, 22, 22, 0.28);
   text-align: justify;
 }
@@ -41,11 +50,12 @@ h1,
 h2,
 h3 {
   color: #f0f0f0;
-  font-family: 'Bowlby One SC', arial black, sans-serif;
+  font-family: "Bowlby One SC", arial black, sans-serif;
   text-shadow: 3pt 3pt rgba(22, 22, 22, 0.28);
   text-transform: uppercase;
 }
 
+/* Sets the content of the page to be 80% of the body and centered */
 .mainContent {
   width: 80%;
   margin: auto;
@@ -63,6 +73,7 @@ h3 {
   border: none;
   outline: none;
   cursor: pointer;
+  width: 150px;
 }
 
 /*Logo*/
@@ -75,7 +86,7 @@ h3 {
 .flexWrapper {
   margin: 30px; /*To not squisch logo and buttons into the side*/
   display: flex;
-  justify-content: space-between; /*Just tried something here*/
+  justify-content: space-between;
 }
 
 /*Title is in topbar*/
@@ -86,7 +97,7 @@ h3 {
 #navbarTextFlexContainer {
   flex-grow: 1; /*This div takes up all available space*/
   display: flex;
-  justify-content: space-evenly; /*Just tried something, looks good I think*/
+  justify-content: space-evenly;
   align-items: center; /*Align text vertically in the middle*/
 }
 
@@ -125,44 +136,50 @@ h3 {
   z-index: 999;
 }
 
+
+/* Sets the fullPage to 100% to make footer wide enough */
 .fullPage{
-  min-height: 100%;
-  width: 100%;
-  position: absolute;
+  height: 100%;
 }
 
+/* Styling the SoMe icons */
 .fa {
-    padding: 10px;
-    font-size: 20px;
-    width: 15px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 100%;
-
+  padding: 10px;
+  font-size: 20px;
+  width: 15px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 100%;
 }
+
 .fa:hover {
   opacity: 0.7;
 }
-  /* Facebook */
+
+/* Facebook styling*/
 .fa-facebook {
-  background: #3B5998;
+  background: #3b5998;
   color: white;
 }
+
+/* Instagram styling */
 .fa-instagram {
   background: white;
 }
 
+
+/* Sets the style for footer, and sticks it to the bottom of the page */
 .footer{
   color: #f0f0f0;
   font-family: "Arimo", arial, sans-serif;
-  position: absolute;
   text-align: left;
   bottom: 0px;
   left: 0px;
   width: 100%;
-  height:70px;
-  background: #22222E;
+  height: 70px;
+  background: #22222e;
   line-height: 70px;
+  flex-shrink: 0;
 }
 
 /*Responsive*/
@@ -198,7 +215,7 @@ h3 {
     flex-direction: column;
   }
 
-  .flexContainer:nth-of-type(2n+1) {
+  .flexContainer:nth-of-type(2n + 1) {
     flex-direction: column-reverse;
   }
 
@@ -213,9 +230,11 @@ h3 {
   .footer {
     line-height: 70px;
     font-size: 14px;
+    white-space: nowrap;
   }
 }
 
+/* Scales the content if the window is smaler than 689px */
 @media only screen and (max-width: 689px) {
   p {
     font-size: 14px;
@@ -256,7 +275,7 @@ h3 {
     flex-direction: column;
   }
 
-  .flexContainer:nth-of-type(2n+1) {
+  .flexContainer:nth-of-type(2n + 1) {
     flex-direction: column-reverse;
   }
 

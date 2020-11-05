@@ -1,9 +1,11 @@
+/*Places the order catering button centred of the page and creates space*/
 .buttonContainer {
   display: flex;
   justify-content: center;
   padding-top: 30px;
 }
 
+/*Styles the order catering button to look like a button*/
 .orderButton {
   padding: 5px 30px;
   border: solid 3px;
