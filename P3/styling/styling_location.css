@@ -1,7 +1,10 @@
+
+/*To change the styling set byt the main styling sheet*/
 .flexContainer {
   align-items: stretch;
 }
 
+/*Adds styling to the two columns on the page*/
 #right_now,
 #seasons {
   padding: 50px;
