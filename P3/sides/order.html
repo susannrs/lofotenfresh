@@ -49,11 +49,13 @@
               title="Names must only contain alphabetic characters.">
           </div>
           <div class="row">
-            <label for="number">Phone number</label>
+            <label for="phone">Phone number</label>
             <input
-              type="text"
-              id="number"
-              name="number"
+              type="tel"
+              id="phone"
+              name="phone"
+              pattern="[0-9]{8}"
+              placeholder="12345678"
               required>
           </div>
           <div class="row">
