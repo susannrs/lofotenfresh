@@ -2,50 +2,62 @@
 <html>
     <head>
         <title>Endringer</title>
-
+        <link rel="stylesheet" href="../P1/style.css">
     </head>
     <body>
-        <h1>Endringer gjort fra P2 til P3:</h1>
+        <h1>Link til nettsiden</h1>
+        <p>http://folk.ntnu.no/viggosk</p>
+        <h1>Endringer gjort fra P2 til P3</h1>
         <div>
             <ul>
-                <li>Javascript og HTML filnavn følger en annen navnekonvensjon i P3, hvor vi skiller ord ved å bruke understrek. For eksempel aboutus.html er nå about_us.html.
+                <li><b>Skriftstørrelse:</b><br> Vi har gått bort fra skriftstørrelsene vi definerte i designdokumentet og har valgt å bruke 16px på brødtekst (p) og 32px (h1), 24px (h2) og 18.72px (h3) på overskrifter. Disse er default-verdiene for elementene, og holder seg dermed innen konvensjonene for skriftstørrelser på nettet.
                 </li>
-                <li>Responsiv: Vi la til endring av tekststørrelse når skjermens bredde er under 1000px. p: 14px, h1: 28px, h2: 20px, h3: 14.72px.
+                <li><b>Skygge på skrift:</b> <br> I steden for å ha 6pt 6pt forskøvet skygge på overskrifter og 4pt 4pt forskøvet skygge på brødtekst, har vi 3pt 3pt på overskrifter og 2pt 2pt på brødtekst. Dette er for at det skal se ut som en skygge og ikke dobbel tekst.</li>
+                <li><b>Skillelinjer:</b> <br />Vi har satt bredden på skillelinjene mellom elementene i menyen til å være 1px.</li>
+                <li><b>Logo: </b><br /> Siden logoen ikke er kvadratisk, har vi satt bredden til å være 150px/75px, og høyden til å være auto slik at logoen ikke deformeres.</li>
+                <li><b>Sidenavn:</b><br /> Vi har endret about us til about.</li>
+                <li><b>Filstruktur:</b><br> Javascript og HTML filnavn følger en annen navnekonvensjon i P3, hvor vi skiller ord ved å bruke understrek. For eksempel styling1.css er nå styling_side.css der side er det tilhørende html-dokumentet, og foodmenu.html er food_menu.html.
                 </li>
-                <li> Responsiv: Vi gikk bort fra en bestemt høyde på navbaren og lot heller størrelse på logo/menyknapp bestemme høyden. Det vil si at høyden ble summen av høyden på logo og padding. Skjerm > 1000px: 214px (154px + 2*30px), < 1000px: 135px (75px + 2*30px).
+                <li><b>Responsiv:</b><br> Vi la til endring av tekststørrelse når skjermens bredde er under 1000px. p: 14px, h1: 28px, h2: 20px, h3: 14.72px.
                 </li>
-                <li> Responsiv: Vi valgte å legge til et nivå med skalering. For å unngå overlapp av sidelinkene vil menyen i navbaren gå fra å være på rad til en kolonne når skjermen blir under 690px bred. (Dette påvirker derfor høyden på navbaren når menyen blir åpnet.)
+                <li><b>Responsiv:</b><br> Vi gikk bort fra en bestemt høyde på navbaren og lot heller størrelse på logo/menyknapp bestemme høyden. Det vil si at høyden ble summen av høyden på logo og padding. Skjerm > 1000px: 214px (154px + 2*30px), < 1000px: 135px (75px + 2*30px).
                 </li>
-                <li>La til js-fil for modularitet av bakgrunnsbilder</li>
-                <li>Fjernet js-filer kalt animations.js og forms.js fordi disse ble ikke brukt i slutt produktet.</li>
-                <li>Fjernet styling_about.css fordi det ikke var noe innhold i denne filen.</li>
+                <li><b>Responsiv:</b><br> Endret høyden til footeren fra 90px når skjermen er over 1000px, til å alltid være 70px. Dette ut av manglende behov for høy footer, og at den ikke skal ta for mye av skjermen.</li>
+                <li><b>Responsiv:</b><br> Vi valgte å legge til et nivå med skalering. For å unngå overlapp av sidelinkene vil menyen i navbaren gå fra å være på rad til en kolonne når skjermen blir under 690px bred. (Dette påvirker derfor høyden på navbaren når menyen blir åpnet.)
+                </li>
+                <li><b>Funksjonalitet:</b><br> La til js-fil for modularitet av bakgrunnsbilder og topbar</li>
+                <li><b>Filstruktur:</b><br> Fjernet js-filer kalt animations.js og forms.js fordi disse ble ikke brukt i slutt produktet.</li>
             </ul>
         </div>
         <div>
-            <h1>Hvem gjorde hva</h1>
+            <h1>Hvem har gjort hva</h1>
             <h2>Aksel</h2>
+            <ul>
+
+            </ul>
             <h2>Anne</h2>
-            <p>
-                <ul>
-                    <li>Opprettet filstruktur for P3 og lagde tomme filer. Lagde skjellett for changes.html.
-                    </li>
-                </ul>
-            </p>
+            <ul>
+                <li>Opprettet filstruktur for P3 og lagde tomme filer. Lagde skjellett for changes.html.
+                </li>
+            </ul>
             <h2>Susanne</h2>
-            <p>
-              <ul>
-                <!--Skal skrive mer utfyllende senere-->
-                <li>Location.html + styling_location.css
-                </li>
-                <li>order.html + styling_order.css
-                </li>
-                <li>enlarge_picture.js
-                </li>
-                <li>media queries
-                </li>
-              </ul>
-            </p>
+            <ul>
+              <!--Skal skrive mer utfyllende senere-->
+              <li>Location.html + styling_location.css
+              </li>
+              <li>order.html + styling_order.css
+              </li>
+              <li>enlarge_picture.js
+              </li>
+              <li>media queries
+              </li>
+            </ul>
             <h2>Vegard</h2>
+            <ul>
+              <li>food_menu.html og styling_foodmenu.css</li>
+              <li>footer.js og tilhørende styling i styling.css</li>
+              <li>Implementerte footeren som et javascript ved bruk av DOM for modularitet</li>
+            </ul>
             <h2>Viggo</h2>
             <ul>
               <li>Lagde ingredients.js</li>
