@@ -222,6 +222,11 @@ h3 {
     line-height: 70px;
     font-size: 14px;
   }
+
+  .indexfooter {
+    line-height: 70px;
+    font-size: 14px;
+  }
 }
 
 @media only screen and (max-width: 689px) {
@@ -277,6 +282,10 @@ h3 {
   }
 
   .footer {
+    line-height: 30px;
+    font-size: 14px;
+  }
+  .indexfooter {
     line-height: 30px;
     font-size: 14px;
   }
